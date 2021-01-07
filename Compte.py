@@ -1,8 +1,8 @@
 class CompteBancaire:
 
-    def __init__(self, nom = None, solde = None):
-        self.nom = nom or 'Dupont'
-        self.solde = solde or 1000
+    def __init__(self, nom = 'Dupont', solde = 1000):
+        self.nom = nom
+        self.solde = solde
 
     def affiche(self):
         print('Le solde du compte bancaire de {} est de {} euros.'.format(self.nom, self.solde))
